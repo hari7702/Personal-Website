@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hari Prasath P - Data Scientist, Business Analyst, and Karate Enthusiast.">
+    <meta name="author" content="Hari Prasath P">
+    <meta name="keywords" content="Hari Prasath P, Data Scientist, Business Analyst, Karate Enthusiast, Portfolio">
+    <title>Hari Prasath - Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hari Prasath </h1>
+        <p class="tagline">Bridging Business and Technology with Precision, Designing Smarter Success with Code and Vision</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-container">
+                    <img src="Color Photo.jpg" alt="Hari Prasath P" class="profile-pic">
+                    <div class="profile-info">
+                        <h3>Hari Prasath P</h3>
+                        <p>Freelance Data Scientist and SDE</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p><strong>Hari Prasath P</strong></p>
+                    <p>Welcome! I am Hari Prasath, a versatile and driven professional with a deep passion for merging creativity with technology. My diverse portfolio spans across data science, analytics, martial arts, and creative design, showcasing my adaptability and excellence in multiple domains. Holding a Bachelor of Science in Computer Science, I am set to embark on my master's journey in Business Analytics at Maynooth University, Ireland, starting in September 2025., I bring hands-on experience in advanced fields such as machine learning, CRM solutions, data visualization, and web development. Through my journey, I have consistently combined technical expertise with innovative problem-solving to deliver impactful results.</p>
+                    <p>At the core of my professional ethos lies a commitment to bridging the gap between business and technology. My work involves crafting data-driven solutions that empower organizations to make informed decisions and achieve sustainable growth. By leveraging skills in programming languages like Python, Java, and SQL, alongside tools such as Power BI, Salesforce, AWS, and Azure, I ensure precise and efficient execution of complex projects. My approach is characterized by analytical rigor, creative design thinking, and a relentless pursuit of excellence.</p>
+                    <h3>Beyond the Digital Realm</h3>
+                    <p>My journey extends beyond the digital and technical landscapes. With over 17 years of dedication to martial arts, I have achieved the status of a state-level karate champion and serve as a Senior Technical Instructor. These accomplishments not only reflect my discipline, resilience, and leadership but also my ability to mentor and inspire others. I have guided aspiring martial artists to excel by fostering a culture of precision, focus, and perseverance.</p>
+                    <p>My experience as an instructor has enriched my ability to lead teams, manage challenges, and drive personal and collective growth. This unique blend of technical proficiency and leadership acumen positions me to approach any challenge with a balanced, holistic perspective.</p>
+                    <h3>Leadership and Vision</h3>
+                    <p>As a leader, I thrive on inspiring teams and individuals to unlock their potential. I have successfully led diverse groups in both technical and non-technical domains, fostering an environment of collaboration and innovation. My ability to communicate effectively, delegate tasks strategically, and mentor team members has enabled me to drive success in multifaceted projects and initiatives.</p>
+                    <p>In my martial arts journey, I have trained and mentored numerous students, instilling in them the values of discipline, focus, and perseverance. These leadership experiences have translated seamlessly into my professional endeavors, where I emphasize teamwork, adaptability, and a solutions-oriented mindset.</p>
+                    <p>Through my leadership roles, I have cultivated a unique perspective that blends analytical thinking with empathy, empowering teams to navigate challenges, seize opportunities, and achieve remarkable results. My vision is to continue leading by example, fostering growth, innovation, and excellence in every endeavor I undertake.</p>
+                    <h3>My Commitment</h3>
+                    <p>Whether I am developing scalable machine learning models, designing dynamic websites, or mentoring individuals toward achieving their potential, my commitment to quality and innovation remains steadfast. I believe in the transformative power of collaboration, continuous learning, and forward-thinking to create solutions that drive meaningful impact. </p>
+                    <p>Through a strong foundation in data science and analytics, coupled with creative and entrepreneurial ventures, I aim to deliver value that resonates across diverse audiences. My mission is to build solutions that not only solve current challenges but also pave the way for future opportunities.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="contact-icons">
+            <a href="mailto:harianirudh0@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/hari-prasath-p-9bab91299/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/hari7702" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>© 2024 Hari Prasath | All Rights Reserved</p>
+    </footer>
+    <script>
+        function adjustFooter() {
+            const footer = document.querySelector('footer');
+            const body = document.body;
+            const html = document.documentElement;
+    
+            const height = Math.max(body.scrollHeight, body.offsetHeight, 
+                                     html.clientHeight, html.scrollHeight, html.offsetHeight);
+    
+            if (height < window.innerHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = '0';
+            } else {
+                footer.style.position = 'relative';
+            }
+        }
+    
+        // Adjust footer on load
+        window.onload = adjustFooter;
+    
+        // Adjust footer on resize
+        window.onresize = adjustFooter;
+    </script>
+</body>
+</html>

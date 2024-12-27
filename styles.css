@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #101820; /* Dark charcoal */
+    background-color: #ffffff; /* White */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+    opacity: 1; /* Initial opacity */
+}
+
+header {
+    background: #FEE715; /* Bright yellow */
+    color: #101820; /* Dark charcoal */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p.tagline {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #101820; /* Dark charcoal */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #101820; /* Dark charcoal */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FEE715; /* Bright yellow */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about, .skills, .services, .contact {
+    margin: 2rem 0;
+}
+
+.about h2, .skills h2, .services h2, .contact h2 {
+    text-align: center;
+    color: #101820; /* Dark charcoal */
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between items */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem; /* Add margin to the right */
+    margin-bottom: 1rem;
+}
+
+.profile-pic {
+    max-width: 200px;
+    border-radius: 30px; /* Curved rectangular shape */
+    margin-bottom: 0.5rem;
+    border: 1px solid #101820; /* Dark charcoal border */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+    }
+
+    .profile-container {
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-bottom: 1rem;
+    }
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #101820; /* Dark charcoal */
+}
+
+.about-text {
+    flex: 1;
+    order: 1;
+}
+
+.about p, .skills p, .services p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about h3, .skills h3, .services h3 {
+    color: #101820; /* Dark charcoal */
+    margin-top: 1rem;
+}
+
+.about ul, .skills ul, .services ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    background: #ffffff; /* White */
+    color: #101820; /* Dark charcoal */
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #101820; /* Dark charcoal */
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #101820; /* Dark charcoal */
+    border-radius: 5px;
+    background-color: #ffffff; /* White */
+    color: #101820; /* Dark charcoal */
+}
+
+.contact form .form-buttons {
+    display: flex;
+    justify-content: space-between; /* Place buttons next to each other */
+}
+
+.contact form button {
+    width: 48%; /* Adjust width to fit two buttons in a row */
+    padding: 0.2rem 0.4rem; /* Smaller button size */
+    background: #101820; /* Dark charcoal */
+    color: #FEE715; /* Bright yellow */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem; /* Smaller font size */
+    font-weight: 600;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #FEE715; /* Bright yellow */
+    color: #101820; /* Dark charcoal */
+}
+
+.contact-icons {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.contact-icons a {
+    color: #101820; /* Dark charcoal */
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #FEE715; /* Bright yellow */
+}
+
+.contact-button {
+    text-decoration: none;
+    color: #101820; /* Dark charcoal */
+    background: #FEE715; /* Bright yellow */
+    padding: 0.2rem 0.4rem; /* Smaller button size */
+    border-radius: 5px;
+    font-size: 0.8rem; /* Smaller font size */
+    font-weight: 600;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
+.contact-button:hover {
+    background: #101820; /* Dark charcoal */
+    color: #FEE715; /* Bright yellow */
+}
+
+footer {
+    background: #333333; /* Light charcoal grey */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Ensure footer takes full width */
+    position: fixed; /* Fix footer at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+}
