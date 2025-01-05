@@ -241,7 +241,6 @@ footer {
     text-align: center;
     padding: 1rem 0;
     width: 100%; /* Ensure footer takes full width */
-    position: fixed; /* Fix footer at the bottom */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     bottom: 0; /* Align to the bottom */
